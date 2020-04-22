@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statewise Count</title>
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+</head>
+<body>
+<br/>
+<form action="{% url 'home' %}">
+    <input type="submit" value="Home" size="100">
+</form>
+<h1 style="font-family:Gruppo;font-size:20px">Statewise Count</h1>
+<tb style="font-family:Abel;font-size:15px">{{ statetotal | safe }}</tb>
+</body>
+</html>

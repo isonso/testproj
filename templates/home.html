@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>State Selector</title>
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+<h2 style="font-family:Gruppo;font-size:20px">Select State and Press Enter</h2>
+<form action="{% url 'count' %}">
+    <select id = 'states' name = 'states'>
+        {% for state in states %}
+        <option value="{{state}}">{{state}}</option>
+        {% endfor %}
+    </select>
+    <br/>
+    <input type = 'submit', value="ENTER" />
+</form>
+</body>
+</html>
